@@ -407,7 +407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamMC2')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamMC_Public')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -438,7 +438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamMC2'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamMC_public'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -776,8 +776,8 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply_sticker("CAACAgUAAxkBAAED8tpiDIW47mzPWB8K2sX9UlWhLNhgRwAC9AMAAjkmQFcPbtzSMCrvryME",)[
-InlineKeyboardButton("Google", url=f"google.com/search?q={query.replace(' ','+')}")
+    await msg.reply_sticker("CAACAgUAAxkBAAED8tpiDIW47mzPWB8K2sX9UlWhLNhgRwAC9AMAAjkmQFcPbtzSMCrvryME",)
+
 ]
 
 
